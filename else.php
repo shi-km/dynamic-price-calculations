@@ -20,21 +20,19 @@ if(isset($_POST["submit"])){
     if($copies >= 20){
         echo $copies * 199;
     }
-    if($copies >=10 && $copies <=19){
+    elseif($copies >=10 && $copies <=19){
         echo $copies * 299;
     }
 
-    if($copies >=5 && $copies <=9){
+    elseif($copies >=5 && $copies <=9){
         echo $copies * 249;
     }
-    if($copies >=1 && $copies <=4){
+    elseif($copies >=1 && $copies <=4){
         echo $copies * 299;
     }
-
-    if($copies <=0){
-        echo "Invalid input";
+    else{
+       echo "Invalid input";
     }
-    
 }
 
 ?>
