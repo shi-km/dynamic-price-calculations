@@ -7,12 +7,13 @@
 </head>
 <body>
     <form action="prac.php" method="post">
-No. Of Books <br> <input type="text" name="text"><br><br>
+No. Of Books <br> <input type="number" name="text"><br><br>
 <button type="submit" name="submit">Order Now</button>
     </form>
 </body>
 </html>
 <?php
+//php algorithime to allow a user order books and get the total price displayed
 $copies=$_POST["text"];
 
 if(isset($_POST["submit"])){
